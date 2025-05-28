@@ -1,0 +1,19 @@
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.titulo {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

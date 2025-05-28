@@ -1,0 +1,11 @@
+<p>card works!</p>
+<div class="card">
+    <img ngIf="imageUrl" [src]="imageUrl" alt="{{ title }}" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">{{ title }}</h3>
+        <p class="card-description">{{ description }}</p>
+        <button ngIf="buttonText" class="card-button" (click)="onButtonClick()">
+        {{ buttonText }}
+        </button>
+    </div>
+</div>
