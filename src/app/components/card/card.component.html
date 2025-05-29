@@ -1,11 +1,11 @@
-<p>card works!</p>
-<div class="card">
-    <img ngIf="imageUrl" [src]="imageUrl" alt="{{ title }}" class="card-image">
-    <div class="card-content">
-        <h3 class="card-title">{{ title }}</h3>
-        <p class="card-description">{{ description }}</p>
-        <button ngIf="buttonText" class="card-button" (click)="onButtonClick()">
-        {{ buttonText }}
-        </button>
+<!-- <div class="row">
+    <div class="col-md-4" *ngFor="let movie of movies">
+        <div class="card">
+            <img [src]="movie.imageSrc" class="card-img-top" [alt]="movie.altText">
+            <div class="card-body">
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text">{{ movie.description }}</p>
+            </div>
+        </div>
     </div>
-</div>
+</div> -->

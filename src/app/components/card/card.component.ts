@@ -16,3 +16,4 @@ throw new Error('Method not implemented.');
 buttonText: any;
 
 }
+

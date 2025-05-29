@@ -8,6 +8,4 @@ import { HeaderPrincipalComponent } from "../header-principal/header-principal.c
   styleUrl: './principal.component.css'
 })
 export class PrincipalComponent {
-  
-
 }

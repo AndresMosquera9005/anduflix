@@ -52,3 +52,25 @@
 .card-button:hover {
     background-color: #0056b3;
 }
+
+/* styles.css */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 10px; /* Rounds the corners */
+  overflow: hidden; /* Ensures content respects border-radius */
+}
+
+.card-title {
+  color: #333; /* Changes title color */
+  font-family: 'Arial', sans-serif; /* Changes font */
+}
+
+.card-text {
+  color: #666; /* Changes text color */
+  line-height: 1.6; /* Improves readability */
+}
+
+.card-img-top {
+  max-height: 200px; /* Limits image height */
+  object-fit: cover; /* Ensures image covers area without distortion */
+}
