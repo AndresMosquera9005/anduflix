@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Routes } from '@angular/router';
+import { TrailerPeliculasComponent } from '../trailer-peliculas/trailer-peliculas.component';
 
 @Component({
   selector: 'app-header-principal',
@@ -9,3 +11,8 @@ import { Component } from '@angular/core';
 export class HeaderPrincipalComponent {
 
 }
+const routes: Routes = [
+  
+  {path: '/trailer-peliculas', component: TrailerPeliculasComponent, title: 'Trailer Peliculas' }
+  
+]

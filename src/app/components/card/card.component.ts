@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,13 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-imageUrl: any;
-title: any;
-description: any;
-onButtonClick() {
-throw new Error('Method not implemented.');
-}
-buttonText: any;
+  @Input()
+  img! : string
+  @Input()
+  titulo! : string;
+  @Input()
+  descripcion! : string;
+  @Input()
+  genero! : string;
+  
 
 }
 
