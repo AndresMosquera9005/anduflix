@@ -1,47 +1,10 @@
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-.card {
-    width: 18rem;
-    height: 95%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem; 
-}
-
-.card-img-top {
-    max-height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-title {
-    color: #333;
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 600;
-}
-
-.card-text {
-    color: #666;
-    line-height: 1.6;
-}
-
-.col {
-    display: flex;
-} */
 
 :host {
-    --color_titulo: #8943d3;
-    --color_texto-btn: #DFEE09;
-    --color_fondo_btn: #8943d3;
-    --color_linea: #8943d3;
+    --color_titulo:#f39c12;
     --tipo_letra:'Courier New', Courier, monospace;
 }
+
+
 
 img {
     max-width: 310px;
