@@ -4,7 +4,16 @@
 
 <main>
     <a routerLink="['/']">
-        <app-header-principal></app-header-principal>
+        <header>
+            <nav>
+                <ul>
+                    <li><a routerLink="">Inicio</a></li>
+                    <li><a routerLink="crearCuenta" >Crear cuenta</a></li>
+                    <li><a routerLink="login">Iniciar sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <app-header-principal></app-header-principal> -->
     </a>
     <section>
         <router-outlet></router-outlet>

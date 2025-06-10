@@ -1,52 +1,384 @@
-:host {
-    --color-texto: #DFEE09;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+/* HERDER */ 
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; 
+    background-color: #f0f2f5;  */
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+
+header {
+    background-color: #282c34; /* Un gris oscuro, casi negro */
+    color: white; /* Color de texto blanco para contrastar */
+    padding: 15px 0; /* Espaciado arriba y abajo del header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para darle profundidad */
 }
 
-form {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para que los elementos se pongan en una fila */
+    justify-content: center; /* Centra los elementos de la navegación */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+nav ul li {
+    margin: 0 20px; /* Espacio entre cada elemento del menú */
 }
 
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.1em; /* Un poco más grande que el tamaño de fuente base */
+    padding: 5px 0; /* Espaciado interno para hacer la zona de click más grande */
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out; /* Transición suave para el hover */
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+nav ul li a:hover {
+    color: #61dafb; /* Un azul claro al pasar el mouse */
+    border-bottom: 2px solid #61dafb; /* Una línea inferior al pasar el mouse */
 }
 
-button:hover {
-  background-color: #0056b3;
+
+
+/* login */
+
+
+.split-container {
+    margin: 5% ;
+    display: flex;
+    width: 90%; /* Ajusta el ancho total del contenedor */
+    max-width: 1200px; /* Ancho máximo para el diseño */
+    height: 600px; /* Altura fija del contenedor para el diseño */
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    position: relative; /* Para posicionar el divisor */
+    overflow: hidden; /* Asegura que el contenido y las formas se queden dentro */
+}
+
+/* --- Sección Izquierda (Azul) --- */
+.left-section {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    background-color: #2196F3; /* Un azul vibrante */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative; /* Para el fondo de nube interior si se desea */
+}
+
+.left-content {
+    text-align: center;
+    max-width: 350px; /* Limita el ancho del contenido interno */
+}
+
+.left-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon .fas.fa-rocket {
+    color: #2196F3; /* Color del icono de cohete */
+    font-size: 2em;
+}
+
+.logo-text {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.left-content p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* --- Sección Derecha (Blanca) --- */
+.right-section {
+    flex: 1; /* Ocupa la otra mitad del espacio */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1; /* Asegura que esté encima del divisor de nube */
+}
+
+.right-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+.right-content h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.signup-form .form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.signup-form label {
+    display: block;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px 0; /* Padding solo vertical */
+    border: none;
+    border-bottom: 1px solid #ccc; /* Línea inferior del input */
+    font-size: 1em;
+    color: #333;
+    outline: none; /* Quita el contorno al enfocar */
+    transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+    border-color: #2196F3; /* Color azul al enfocar */
+}
+
+/* La línea azul que aparece debajo del input al enfocar */
+.input-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Inicialmente oculta */
+    height: 2px; /* Grosor de la línea */
+    background-color: #2196F3;
+    transition: width 0.3s ease;
+}
+
+.signup-form input:focus + .input-line {
+    width: 100%; /* Se extiende al enfocar */
+}
+
+.signup-form input::placeholder {
+    color: #aaa;
+}
+
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.terms-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    /* Estilos personalizados para el checkbox si lo deseas */
+    accent-color: #2196F3; /* Color del checkbox moderno */
+    width: 18px;
+    height: 18px;
+}
+
+.terms-checkbox a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.terms-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 30px;
+}
+
+.btn-signup, .btn-signin {
+    flex: 1; /* Para que ocupen el mismo ancho */
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; /* Bordes muy redondeados */
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-signup {
+    background: linear-gradient(to right, #2196F3, #007bff); /* Degradado azul */
+    color: white;
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.3);
+}
+
+.btn-signup:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(33, 150, 243, 0.4);
+    background: linear-gradient(to right, #007bff, #2196F3); 
+}
+
+.btn-signin {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ddd;
+    
+}
+.btn-signin a{
+    color: #555; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+
+.btn-signin:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Divisor de Nube / Onda --- */
+.cloud-divider {
+    position: absolute;
+    left: 50%; /* Inicialmente en el centro */
+    top: 0;
+    width: 100px; /* Ancho de la sección de la nube */
+    height: 100%;
+    background-color: white; /* Color de las nubes */
+    transform: translateX(-50%); /* Centrarlo */
+    z-index: 0; /* Asegura que esté entre las dos secciones */
+
+    /* Forma de la nube usando clip-path. Esto es lo más complejo */
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 10%,
+        90% 15%,
+        100% 20%,
+        90% 25%,
+        100% 30%,
+        90% 35%,
+        100% 40%,
+        90% 45%,
+        100% 50%,
+        90% 55%,
+        100% 60%,
+        90% 65%,
+        100% 70%,
+        90% 75%,
+        100% 80%,
+        90% 85%,
+        100% 90%,
+        90% 95%,
+        100% 100%,
+        0% 100%
+    );
+    /* Para que la nube solo afecte al lado derecho, la colocamos ligeramente a la izquierda del centro */
+    left: calc(50% + 15px); /* Ajusta este valor para mover la "línea de nubes" */
+}
+
+/* Para navegadores con Webkit (Chrome, Safari) - puedes necesitar prefijos si no es muy reciente */
+@supports (-webkit-mask-image: url(#wave)) or (mask-image: url(#wave)) {
+    /* Aquí se podría usar SVG para una forma de nube más compleja y suave,
+       pero clip-path es más simple de demostrar directamente en CSS.
+       Si quieres un SVG, habría que incrustarlo en el HTML o usarlo como mask-image. */
+}
+
+
+/* --- Media Queries para Responsividad (Opcional, pero recomendable) --- */
+@media (max-width: 900px) {
+    .split-container {
+        flex-direction: column; /* Apila las secciones en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        width: 95%;
+        max-width: 500px; /* Limita el ancho en modo columna */
+    }
+
+    .left-section, .right-section {
+        border-radius: 20px; /* Redondea las esquinas de ambas secciones */
+        padding: 30px;
+    }
+
+    .left-section {
+        border-bottom-left-radius: 0; /* Quita el redondeo inferior para que se conecte bien */
+        border-bottom-right-radius: 0;
+        text-align: center;
+    }
+
+    .right-section {
+        border-top-left-radius: 0; /* Quita el redondeo superior */
+        border-top-right-radius: 0;
+        padding-top: 40px; /* Un poco más de padding arriba */
+    }
+
+    .cloud-divider {
+        display: none; /* Oculta el divisor de nube en pantallas pequeñas */
+    }
+
+    .left-content h1 {
+        font-size: 2em;
+    }
+
+    .logo-text {
+        font-size: 2.2em;
+    }
+
+    .right-content h2 {
+        margin-bottom: 30px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-content {
+        padding: 20px;
+    }
+    .right-content {
+        padding: 20px;
+    }
+    .btn-signup, .btn-signin {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
 }

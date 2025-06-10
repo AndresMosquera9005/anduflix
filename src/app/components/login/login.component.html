@@ -1,11 +1,41 @@
 <p>login works!</p>
 
-<form action="/login" method="post">
-    <label for="username">Correo Electronico:</label>
-    <input type="text" id="username" name="username" required>
+<div class="split-container">
+    <div class="left-section">
+        <div class="left-content">
+            <h1>Bienvenidos al Login</h1>
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i> 
+                </div>
+                <span class="logo-text">Andruflix</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        
+        </div>
+    </div>
 
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" required>
+    <div class="right-section">
+        <div class="right-content">
+            <h2>Inicio sesion</h2>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <span class="input-line"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <span class="input-line"></span>
+                </div>
 
-    <button type="submit">Login</button>
-</form>
+                <div class="button-group">
+                    <button type="button" class="btn-signin"><a>INICIAR SESION</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="cloud-divider"></div>
+</div>
