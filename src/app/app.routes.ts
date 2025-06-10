@@ -12,6 +12,12 @@ export const routes: Routes = [
     },
     {
         path: 'crearCuenta', component: CrearCuentaComponent , title: 'Registro page'
-    }
+    },
+    // {
+    //     path: 'series', component:  , title: 'Series page'
+    // },
+    // {
+    //     path: 'peliculas', component:  , title: 'Series page'
+    // }
     
 ];
