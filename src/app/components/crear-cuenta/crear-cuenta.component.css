@@ -32,9 +32,9 @@ nav ul li a:hover {
 
 
 .split-container {
-    margin: 5% ;
+    margin: 5% 20%;
     display: flex;
-    width: 90%; /* Ajusta el ancho total del contenedor */
+    width: 90%; 
     max-width: 1200px; /* Ancho máximo para el diseño */
     height: 600px; /* Altura fija del contenedor para el diseño */
     border-radius: 20px;
