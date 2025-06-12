@@ -1,36 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-nav ul {
-    list-style: none; /* Quita los puntos de la lista */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Para que los elementos se pongan en una fila */
-    justify-content: center; /* Centra los elementos de la navegación */
-}
-
-nav ul li {
-    margin: 0 20px; /* Espacio entre cada elemento del menú */
-}
-
-nav ul li a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 1.1em; /* Un poco más grande que el tamaño de fuente base */
-    padding: 5px 0; /* Espaciado interno para hacer la zona de click más grande */
-    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out; /* Transición suave para el hover */
-}
-
-nav ul li a:hover {
-    color: #61dafb; /* Un azul claro al pasar el mouse */
-    border-bottom: 2px solid #61dafb; /* Una línea inferior al pasar el mouse */
-}
-
-
-
-/* login */
-
-
 .split-container {
     margin: 5% 20%;
     display: flex;
