@@ -5,12 +5,6 @@
 }
 
 
-
-img {
-    max-width: 310px;
-    height: 196px;
-}
-
 #trailer-peliculas {
     color: var(--color_titulo);
     font-size: 24px;
