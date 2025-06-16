@@ -1,4 +1,4 @@
-/* @import url('../../../../public/img/Gemini_Generated_Image_q82ij6q82ij6q82i.png'); */
+
 
 .split-container {
     margin: 5% auto;
@@ -55,6 +55,12 @@
     align-items: center;
     margin-right: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
 }
 
 .logo-icon .fas.fa-rocket {
