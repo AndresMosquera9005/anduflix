@@ -1,66 +1,48 @@
-body {
-    font-family: 'Arial', sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background-color: #f0f0f0; 
-}
-
-/* header {
-    background-color: #282c34; 
-    color: white;
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #28a745; 
+    color: #fff;
     padding: 15px 0; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para un efecto 3D */
+    display: flex; /* Para alinear elementos en el header */
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding-left: 20px; /* Espaciado a la izquierda para el ícono */
+    padding-right: 20px; /* Espaciado a la derecha */
 }
 
+/* Estilos para la navegación (nav) */
 nav ul {
-    list-style: none;
+    list-style: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-    display: flex; 
-    justify-content: center; 
+    display: flex; /* Para que los elementos de la lista se muestren en línea */
 }
 
 nav ul li {
-    margin: 0 20px; 
+    margin-right: 25px; /* Espacio entre cada elemento de la lista */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* No hay margen a la derecha para el último elemento */
 }
 
 nav ul li a {
-    color: white; 
-    text-decoration: none; 
-    font-weight: bold; 
-    font-size: 1.1em; 
-    padding: 5px 0;
-    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; /* Color de texto blanco para los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
 }
 
 nav ul li a:hover {
-    color: #61dafb; 
-    border-bottom: 2px solid #61dafb; 
-} */
-
-header {
-    background-color: #222;
-    padding: 16px 0;
+    color: #f0f0f0; /* Color de texto más claro al pasar el mouse */
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.2s;
-    cursor: pointer;
-}
-
-nav ul li a:hover {
-    color: #ff9800;
+/* Estilo para el icono */
+.icon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 15px;
+    vertical-align: middle;
 }

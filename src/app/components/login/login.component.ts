@@ -20,9 +20,9 @@ export class LoginComponent {
     this.password = clave.value;
     
     const correo = "andru@gmail.com";
-    const contrasena = "90051731725895477*";
+    const contrasena = "90051763881/";
 
-    if (this.email == "" && this.password == "") {
+    if (this.email === "" && this.password === "") {
       alert("Ingrese su correo y contraseña");
     } else if (this.email === correo && this.password === contrasena) {
       this.router.navigate(['listadoPeliculasSeries']);
