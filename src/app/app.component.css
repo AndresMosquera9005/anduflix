@@ -1,49 +1,47 @@
-/* Estilos para el encabezado (header) */
+
 header {
-    background-color: #28a745; /* Un tono de verde agradable */
-    color: #fff; /* Texto blanco */
-    padding: 15px 0; /* Espaciado interno superior e inferior */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para un efecto 3D */
-    display: flex; /* Para alinear elementos en el header */
-    justify-content: space-between; /* Distribuye espacio entre elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding-left: 20px; /* Espaciado a la izquierda para el ícono */
-    padding-right: 20px; /* Espaciado a la derecha */
+    background-color: #2196F3; 
+    color: #fff; 
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 20px; 
+    padding-right: 20px;
 }
 
-/* Estilos para la navegación (nav) */
+
 nav ul {
-    list-style: none; /* Quita los puntos de la lista */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Para que los elementos de la lista se muestren en línea */
+    display: flex; 
 }
 
 nav ul li {
-    margin-right: 25px; /* Espacio entre cada elemento de la lista */
+    margin-right: 25px; 
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* No hay margen a la derecha para el último elemento */
+    margin-right: 0; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #fff; /* Color de texto blanco para los enlaces */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
-    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    color: #f0f0f0; /* Color de texto más claro al pasar el mouse */
+    color: rgb(75, 37, 75); 
 }
 
-/* Estilo para el icono */
-.icon {
-    background-image: url('/img/Gemini_Generated_Image_q82ij6q82ij6q82i.png');
-    width: 40px; /* Ancho del icono */
-    height: 40px; /* Alto del icono */
-    margin-right: 15px; /* Espacio a la derecha del icono */
-    vertical-align: middle; /* Alineación vertical con el texto si lo hubiera */
+.logo{
+    width: 50px; 
+    height: auto; 
+    margin-right: 30px;
+    border-radius: 30px; 
 }
