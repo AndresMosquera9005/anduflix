@@ -7,3 +7,30 @@ h5{
     text-align: center;
     margin-top: 10px;
 }
+
+.card{
+    /* margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; */
+    flex: 0 1 300px; /* flex-grow:0 (no crece), flex-shrink:1 (puede encogerse), flex-basis:300px (ancho preferido) */
+    /* También puedes usar directamente width: 300px; para un ancho fijo */
+    /* max-width: 300px; /* Opcional: para asegurar que no se estiren demasiado */
+    min-width: 250px; /* Opcional: para evitar que se hagan demasiado pequeñas en pantallas chicas */
+
+    /* Estilos visuales de la tarjeta */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: start;
+    display: flex; /* Habilitar Flexbox para el contenido interno de la tarjeta */
+    flex-direction: column; /* Apilar el contenido verticalmente */
+    justify-content: space-between;
+    
+}
+
+.margenIcconos{
+    margin: 10px;
+}

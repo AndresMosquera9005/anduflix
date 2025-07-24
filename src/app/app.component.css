@@ -1,47 +1,106 @@
 
-header {
-    background-color: #2196F3; 
-    color: #fff; 
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding-left: 20px; 
-    padding-right: 20px;
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
 }
 
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
 
+header .logo {
+    height: 50px; /* Tamaño del logo */
+    width: auto;
+    border-radius: 50%; /* Si quieres que el logo sea circular */
+    object-fit: cover;
+}
+
+/* Estilos para la navegación */
 nav ul {
-    list-style: none; 
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
+    gap: 25px; /* Espacio entre los elementos de la lista */
 }
 
 nav ul li {
-    margin-right: 25px; 
-}
-
-nav ul li:last-child {
-    margin-right: 0; 
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
-    text-decoration: none; 
-    color: #fff; 
-    font-weight: bold; 
-    font-size: 1.1em; 
-    transition: color 0.3s ease; 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: rgb(75, 37, 75); 
+    color: #e2e6ea; /* Color más claro al pasar el ratón */
 }
 
-.logo{
-    width: 50px; 
-    height: auto; 
-    margin-right: 30px;
-    border-radius: 30px; 
+/* Estilos para los iconos SVG */
+nav ul li svg {
+    margin-right: 8px;
+    color: white; /* Color de los iconos */
+    font-size: 1.2em; /* Tamaño de los iconos */
+}
+
+/* Estilos para el routerLink que envuelve el header (si lo quieres como un bloque de enlace) */
+a[routerLink="['/']"] {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Para que ocupe todo el ancho */
+}
+
+/* Estilos para la sección principal (router-outlet) */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    min-height: 300px; /* Para que el contenido tenga un mínimo de altura */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
 }
