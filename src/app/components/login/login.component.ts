@@ -25,7 +25,7 @@ export class LoginComponent {
     if (this.email === "" && this.password === "") {
       alert("Ingrese su correo y contraseña");
     } else if (this.email === correo && this.password === contrasena) {
-      this.router.navigate(['listadoPeliculasSeries']);
+      this.router.navigate(['peliculas']);
     } else {
       alert("Datos incorrectos, intente nuevamente");
     }

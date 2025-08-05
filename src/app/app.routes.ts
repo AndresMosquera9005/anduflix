@@ -3,6 +3,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CrearCuentaComponent } from './components/crear-cuenta/crear-cuenta.component';
 import { ListadoPeliculasSeriesComponent } from './components/listado-peliculas-series/listado-peliculas-series.component';
 import { TrailerPeliculasComponent } from './components/trailer-peliculas/trailer-peliculas.component';
+import { PeliculasComponent } from './components/peliculas/peliculas.component';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,8 @@ export const routes: Routes = [
     },
     {
         path: 'listadoPeliculasSeries', component: ListadoPeliculasSeriesComponent , title: 'Listado de Peliculas y Series'
+    },
+    {
+        path: 'peliculas', component: PeliculasComponent , title: 'Ver Peliculas'
     }    
 ];

@@ -6,6 +6,7 @@ import { LoginComponent } from '../components/login/login.component';
 import { CrearCuentaComponent } from '../components/crear-cuenta/crear-cuenta.component';
 import { ListadoPeliculasSeriesComponent } from '../components/listado-peliculas-series/listado-peliculas-series.component';
 import { TrailerPeliculasComponent } from '../components/trailer-peliculas/trailer-peliculas.component';
+import { PeliculasComponent } from '../components/peliculas/peliculas.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,14 @@ const routes: Routes = [
   },
   {
     path: 'listadoPeliculasSeries', component: ListadoPeliculasSeriesComponent 
+  },
+  {
+    path: 'peliculas', component: PeliculasComponent
   }
+  // {
+  //   path: 'trailerPeliculas/:id', component: TrailerPeliculasComponent
+
+  // }
 ]
 
 @NgModule({
